@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+*~
+**/.DS_Store
+settings.json
+*.pyc
+doxygen
+**/out.txt
+**/#*#
