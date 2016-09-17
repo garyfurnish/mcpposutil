@@ -8,4 +8,4 @@ ENDIF(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 add_executable(mcpputil_test
   main.cpp
   )
-target_link_libraries(mcpputil_test)
+target_link_libraries(mcpputil_test mcpposutil)
