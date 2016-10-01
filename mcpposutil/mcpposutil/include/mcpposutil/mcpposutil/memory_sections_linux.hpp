@@ -14,12 +14,12 @@ namespace mcpposutil
   /**
    * \brief Read in a file that can change while being read in a quasi-determinalistic way.
    *
-   * \brief filename File to read.
-   * \brief max_iterations Number of times to try to read file before throwing exception.
+   * @param filename File to read.
+   * @param max_iterations Number of times to try to read file before throwing exception.
    **/
   extern ::std::string read_file(::gsl::cstring_span<> filename, size_t max_iterations);
   /**
-   * \brief Read memory maps for this process in as string from proc.
+   * \brief Print current process map.
    **/
-  extern ::std::string read_memory_maps();
+  void print_pmap();
 }

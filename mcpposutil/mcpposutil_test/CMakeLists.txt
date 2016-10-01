@@ -5,7 +5,7 @@ include_directories(${BANDIT_INCLUDE_PATH})
 IF(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 add_compile_options(-fPIE)
 ENDIF(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
-add_executable(mcpputil_test
+add_executable(mcpposutil_test
   main.cpp
   )
-target_link_libraries(mcpputil_test mcpposutil)
+target_link_libraries(mcpposutil_test mcpposutil mcpputil)
