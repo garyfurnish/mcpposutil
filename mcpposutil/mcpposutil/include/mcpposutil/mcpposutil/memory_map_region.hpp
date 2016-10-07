@@ -1,5 +1,6 @@
 #pragma once
 #include <mcpputil/mcpputil/memory_range.hpp>
+#include <string>
 #include <vector>
 namespace mcpposutil
 {
