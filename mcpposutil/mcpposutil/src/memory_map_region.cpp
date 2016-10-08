@@ -25,7 +25,7 @@ namespace mcpposutil
     case memory_map_region_type_enum::heap:
       return "heap";
     }
-	::std::terminate();
+    ::std::terminate();
   }
   [[nodiscard]] ::std::string to_string(memory_map_region_permissions_enum perm)
   {
@@ -43,7 +43,7 @@ namespace mcpposutil
     case memory_map_region_permissions_enum::none:
       return "-";
     }
-	::std::terminate();
+    ::std::terminate();
   }
   [[nodiscard]] extern memory_map_region_permissions_enum memory_map_region_permission_from_string(char c)
   {

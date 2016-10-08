@@ -5,9 +5,17 @@
 #elif defined(__APPLE__)
 #include "memory_sections_osx.hpp"
 #elif defined(_WIN32)
-inline auto get_data_start() -> void * { return nullptr; }
-inline auto get_data_end() -> void * { return nullptr; }
-inline void print_pmap() {}
+inline auto get_data_start() -> void *
+{
+  return nullptr;
+}
+inline auto get_data_end() -> void *
+{
+  return nullptr;
+}
+inline void print_pmap()
+{
+}
 #else
 #error "UNKNOWN PLATFORM"
 #endif
