@@ -118,7 +118,6 @@ namespace mcpposutil
   void print_pmap()
   {
     auto pmap = create_process_map();
-    create_process_map();
     for (auto &&section : pmap) {
       auto region = memory_map_region_from_string(section);
       ::std::cout << to_string(region) << "\n";
