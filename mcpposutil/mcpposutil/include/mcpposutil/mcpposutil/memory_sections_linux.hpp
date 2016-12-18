@@ -18,8 +18,5 @@ namespace mcpposutil
    * @param max_iterations Number of times to try to read file before throwing exception.
    **/
   extern ::std::string read_file(::gsl::cstring_span<> filename, size_t max_iterations);
-  /**
-   * \brief Print current process map.
-   **/
-  void print_pmap();
+  extern ::std::string pmap_as_string();
 }

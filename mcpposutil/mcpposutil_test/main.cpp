@@ -4,7 +4,8 @@
 int main()
 {
   using namespace mcpposutil;
-  ::std::cout << "data section: " << get_data_start() << " " << get_data_end() << ::std::endl;
-  print_pmap();
+  (void)get_data_start();
+  (void)get_data_end();
+  (void)pmap_as_string();
   return 0;
 }

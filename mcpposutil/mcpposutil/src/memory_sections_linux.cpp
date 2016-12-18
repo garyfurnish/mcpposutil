@@ -115,12 +115,14 @@ namespace mcpposutil
     mmr.set_offset(::std::stoull(vec.at(2), 0, 16));
     return mmr;
   }
-  void print_pmap()
+  auto pmap_as_string() -> ::std::string
   {
+    ::std::stringstream ss;
     auto pmap = create_process_map();
     for (auto &&section : pmap) {
       auto region = memory_map_region_from_string(section);
-      ::std::cout << to_string(region) << "\n";
+      ss << to_string(region) << "\n";
     }
+    return ss.str();
   }
 }
