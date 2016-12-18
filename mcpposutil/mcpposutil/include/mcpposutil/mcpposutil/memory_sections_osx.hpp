@@ -20,5 +20,5 @@ namespace mcpposutil
   /**
    * \brief Print current process map.
    **/
-  inline void print_pmap(){};
+  inline ::std::string pmap_as_string() { return {}; };
 }
