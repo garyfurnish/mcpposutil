@@ -112,7 +112,7 @@ namespace mcpposutil
     auto mmr = memory_map_region_t{range, type};
     mmr.set_path(path);
     mmr.permissions() = memory_map_region_permissions_from_string(vec.at(1));
-    mmr.set_offset(::std::stoull(vec.at(2), 0, 16));
+    mmr.set_offset(::std::stoull(vec.at(2), nullptr, 16));
     return mmr;
   }
   auto pmap_as_string() -> ::std::string
